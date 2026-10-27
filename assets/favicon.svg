@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#d91a1a"/>
+  <rect x="3" y="3" width="58" height="58" rx="9" fill="none" stroke="#fcd400" stroke-width="3"/>
+  <!-- Scales of Justice & Letter P -->
+  <circle cx="32" cy="18" r="4" fill="#fcd400"/>
+  <path d="M16 26 L48 26 M32 18 L32 42 M20 42 L44 42" stroke="#fcd400" stroke-width="3" stroke-linecap="round"/>
+  <!-- Scale pans -->
+  <path d="M12 36 L20 26 L28 36 Z" fill="#fcd400"/>
+  <path d="M36 36 L44 26 L52 36 Z" fill="#fcd400"/>
+  <!-- Bold Letter P -->
+  <text x="32" y="58" font-family="'Anton', Impact, sans-serif" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="1">P</text>
+</svg>
