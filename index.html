@@ -321,17 +321,8 @@
 <!-- Right Column: Visual Billboard Imagery using Original Assets -->
 <div class="lg:col-span-6 flex flex-col items-center justify-center relative">
 <!-- Main Billboard Image Asset -->
-<div class="relative w-full border-4 border-ink-black bg-legal-gold retro-shadow-box overflow-hidden group">
-<img alt="Better Call Pulido Billboard Oficial" class="w-full h-auto object-contain block max-w-full hover:scale-[1.02] transition-transform duration-300" src="assets/hero-composite-banner.png">
-<!-- Bottom Red Strip overlaid -->
-<div class="w-full bg-primary text-stamped-white py-2 px-4 border-t-4 border-ink-black flex items-center justify-between">
-<span class="font-headline-sm text-headline-sm uppercase text-legal-gold tracking-wider">
-                ¡LLAMA YA: 320 4477463!
-              </span>
-<span class="font-label-md text-label-md uppercase bg-ink-black text-stamped-white px-2 py-0.5 font-bold">
-                SE HABLA ESPAÑOL
-              </span>
-</div>
+<div class="relative w-full border-4 border-ink-black bg-legal-gold retro-shadow-box overflow-hidden group aspect-[16/9]">
+<img alt="Better Call Pulido Billboard Oficial" class="w-full h-full object-cover block hover:scale-[1.02] transition-transform duration-300" src="assets/hero-composite-banner.png">
 </div>
 <!-- Secondary Vintage Graphic Badge slap -->
 <div class="mt-4 w-full bg-stamped-white border-2 border-ink-black p-3 retro-shadow-sm flex items-center justify-between">
@@ -350,7 +341,7 @@
 </div>
 </section>
 <!-- ================= 3. ÁREAS DE PRÁCTICA: ¿EN QUÉ LÍO TE METISTE? ================= -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="que-lio-tienes">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12" id="que-lio-tienes">
 <!-- Section Header Banner -->
 <div class="bg-ink-black text-stamped-white p-4 border-4 border-primary retro-shadow-box mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
 <div class="flex items-center gap-3">
@@ -365,7 +356,7 @@
 </div>
 </div>
 <div class="bg-primary text-legal-gold font-label-lg text-label-lg px-4 py-2 border-2 border-stamped-white uppercase font-bold tracking-wider -rotate-1">
-        ¡NO TE DECLARESCULPABLE!
+        ¡NO TE DECLARES CULPABLE!
       </div>
 </div>
 <!-- Bento Grid / Classified File Cards -->
@@ -479,9 +470,37 @@
 </div>
 </div>
 </div>
-<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6"><div class="bg-parchment-dark border-4 border-ink-black p-4 retro-shadow-box flex flex-col items-center"><div class="bg-primary text-stamped-white px-3 py-1 font-label-md text-label-md uppercase font-bold border-2 border-ink-black mb-3 -rotate-1 shadow-sm w-full text-center">AVISO CLASIFICADO: D.U.I. &amp; TRÁFICO</div><div class="border-3 border-ink-black overflow-hidden bg-legal-gold"><img alt="Better Call Pulido - D.U.I. Tráfico" class="w-full h-auto object-contain block max-w-full hover:scale-[1.02] transition-transform" src="assets/card-dui.png"></div><div class="mt-3 w-full flex justify-between items-center"><span class="font-label-sm text-label-sm uppercase font-bold text-ink-black">CASOS URGENTES DE TRÁFICO</span><a href="tel:3204477463" class="bg-primary text-stamped-white font-label-sm text-label-sm uppercase px-3 py-1 border border-ink-black font-bold hover:bg-alert-red-dark">CONSULTA INMEDIATA</a></div></div><div class="bg-parchment-dark border-4 border-ink-black p-4 retro-shadow-box flex flex-col items-center"><div class="bg-ink-black text-legal-gold px-3 py-1 font-label-md text-label-md uppercase font-bold border-2 border-legal-gold mb-3 rotate-1 shadow-sm w-full text-center">TARJETA OFICIAL: ¡DEFENSA LEGAL GARANTIZADA!</div><div class="border-3 border-ink-black overflow-hidden bg-legal-gold"><img alt="Better Call Pulido - Defensa Legal" class="w-full h-auto object-contain block max-w-full hover:scale-[1.02] transition-transform" src="assets/card-defensa.png"></div><div class="mt-3 w-full flex justify-between items-center"><span class="font-label-sm text-label-sm uppercase font-bold text-ink-black">ASESORÍA INTEGRAL 24/7</span><a href="tel:3204477463" class="bg-legal-gold text-ink-black font-label-sm text-label-sm uppercase px-3 py-1 border border-ink-black font-bold hover:bg-secondary-fixed">LLAMA YA</a></div></div></div></section>
+<!-- Tarjetas destacadas cuadradas 1:1 -->
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+  <div class="bg-parchment-dark border-4 border-ink-black p-5 retro-shadow-box flex flex-col items-center">
+    <div class="bg-primary text-stamped-white px-3 py-1 font-label-md text-label-md uppercase font-bold border-2 border-ink-black mb-3 -rotate-1 shadow-sm w-full text-center">
+      AVISO CLASIFICADO: D.U.I. &amp; TRÁFICO
+    </div>
+    <div class="border-3 border-ink-black overflow-hidden bg-legal-gold aspect-square w-full max-w-sm mx-auto">
+      <img alt="Better Call Pulido - D.U.I. Tráfico" class="w-full h-full object-cover block hover:scale-[1.02] transition-transform duration-300" src="assets/card-dui.png">
+    </div>
+    <div class="mt-4 w-full flex justify-between items-center gap-2">
+      <span class="font-label-sm text-label-sm uppercase font-bold text-ink-black">CASOS URGENTES DE TRÁFICO</span>
+      <a href="tel:3204477463" class="bg-primary text-stamped-white font-label-sm text-label-sm uppercase px-4 py-1.5 border border-ink-black font-bold hover:bg-alert-red-dark active:translate-x-0.5">CONSULTA INMEDIATA</a>
+    </div>
+  </div>
+
+  <div class="bg-parchment-dark border-4 border-ink-black p-5 retro-shadow-box flex flex-col items-center">
+    <div class="bg-ink-black text-legal-gold px-3 py-1 font-label-md text-label-md uppercase font-bold border-2 border-legal-gold mb-3 rotate-1 shadow-sm w-full text-center">
+      TARJETA OFICIAL: ¡DEFENSA LEGAL GARANTIZADA!
+    </div>
+    <div class="border-3 border-ink-black overflow-hidden bg-legal-gold aspect-square w-full max-w-sm mx-auto">
+      <img alt="Better Call Pulido - Defensa Legal" class="w-full h-full object-cover block hover:scale-[1.02] transition-transform duration-300" src="assets/card-defensa.png">
+    </div>
+    <div class="mt-4 w-full flex justify-between items-center gap-2">
+      <span class="font-label-sm text-label-sm uppercase font-bold text-ink-black">ASESORÍA INTEGRAL 24/7</span>
+      <a href="tel:3204477463" class="bg-legal-gold text-ink-black font-label-sm text-label-sm uppercase px-4 py-1.5 border border-ink-black font-bold hover:bg-secondary-fixed active:translate-x-0.5">LLAMA YA</a>
+    </div>
+  </div>
+</div>
+</section>
 <!-- ================= 4. RETRO FLASH SOUNDBOARD INTERACTIVO (2004 WEB STYLE) ================= -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="sonidos-legales">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12" id="sonidos-legales">
 <div class="bg-ink-black border-4 border-legal-gold p-6 md:p-8 retro-shadow-box relative">
 <!-- Window Titlebar retro 2000s -->
 <div class="bg-primary text-stamped-white px-3 py-1.5 border-2 border-ink-black flex justify-between items-center mb-6 font-headline-sm text-headline-sm">
@@ -534,7 +553,7 @@
 </div>
 </section>
 <!-- ================= 5. ¿POR QUÉ PULIDO? + TESTIMONIOS NOTARIADOS ================= -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="testimonios">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12" id="testimonios">
 <div class="border-4 border-ink-black bg-parchment-dark p-6 md:p-10 retro-shadow-box">
 <!-- Heading -->
 <div class="text-center max-w-3xl mx-auto mb-10">
@@ -620,10 +639,163 @@
 </div>
 </div>
 </section>
-<!-- ================= 6. FORMULARIO DE ADMISIÓN URGENTE (TELEGRAMA / EXPEDIENTE) ================= -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="valla-nacional"><div class="bg-parchment-dark border-4 border-ink-black p-4 sm:p-8 retro-shadow-box relative"><div class="bg-primary text-stamped-white p-3 border-2 border-ink-black flex flex-col md:flex-row justify-between items-center gap-2 mb-6"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-legal-gold text-2xl" style="font-variation-settings: 'FILL' 1;">billboard</span><span class="font-headline-md text-headline-md uppercase text-legal-gold tracking-wide">★ VALLA PÚBLICA NACIONAL: ¡CONOCE TUS DERECHOS EN LA CALLE! ★</span></div><span class="bg-ink-black text-stamped-white font-label-sm text-label-sm uppercase px-3 py-1 border border-stamped-white font-bold rotate-1">VISTA EN CARRETERAS</span></div><div class="text-center max-w-3xl mx-auto mb-6"><p class="font-headline-sm text-headline-sm uppercase text-ink-black tracking-wide">¿VISTE NUESTRO CARTEL EN LA AUTOPISTA? NO DIGAS NADA SIN TU ABOGADO</p><p class="font-body-md text-body-md text-ink-black/90 mt-1">Si te detuvieron o viste esta valla mientras la patrulla te seguía, grábate este número en la memoria antes de firmar cualquier papel.</p></div><div class="border-4 border-ink-black bg-legal-gold shadow-[6px_6px_0px_#11161B] overflow-hidden relative group"><img alt="Valla Publicitaria Oficial Better Call Pulido" class="w-full h-auto object-contain block max-w-full hover:scale-[1.01] transition-transform duration-300" src="assets/valla-autopista.png"></div><div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-stamped-white border-2 border-ink-black p-4 retro-shadow-sm"><div class="flex items-center gap-2 text-ink-black"><span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">campaign</span><span class="font-label-md text-label-md uppercase font-bold">CARTEL AUTORIZADO DEFENSA VIAL Y PENAL 24/7</span></div><div class="flex flex-wrap gap-3 w-full sm:w-auto"><a class="flex-1 sm:flex-initial text-center bg-legal-gold hover:bg-secondary-fixed text-ink-black font-label-md text-label-md uppercase px-4 py-2 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform" href="assets/valla-autopista.png" target="_blank" download="valla-publicitaria-pulido.png">DESCARGAR AFICHE EN ALTA DEFINICIÓN</a><a class="flex-1 sm:flex-initial text-center bg-primary hover:bg-alert-red-dark text-stamped-white font-label-md text-label-md uppercase px-4 py-2 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform" href="tel:3204477463">REPORTAR ABUSO POLICIAL AHORA: 320 4477463</a></div></div></div></section><section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="contacto-emergencia"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"><div class="lg:col-span-8 bg-stamped-white border-4 border-ink-black retro-shadow-box p-6 sm:p-10 relative" id="expediente-urgente"><div class="bg-primary text-stamped-white p-3 border-2 border-ink-black mb-6 flex flex-col sm:flex-row justify-between items-center gap-2"><div class="flex items-center gap-2 font-headline-md text-headline-md uppercase text-legal-gold"><span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">assignment_late</span><span class="">EXPEDIENTE DE INGRESO JUDICIAL CONFIDENCIAL</span></div><span class="font-label-sm text-label-sm uppercase bg-ink-black text-stamped-white px-2 py-0.5 border border-stamped-white font-bold">URGENCIA NIVEL 5</span></div><p class="font-body-md text-body-md text-ink-black mb-6">Llena este formulario antes de que llegue la notificación fiscal o la grúa municipal. Pulido revisa personalmente cada envío en su beeper / teléfono directo.</p><form class="space-y-4" id="emergency-form" onsubmit="handleFormSubmit(event)"><div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div><label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">NOMBRE DEL IMPLICADO / CLIENTE:</label><input class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Ej: Wilson 'El Rápido' Gómez" required="" type="text"></div><div><label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">TELÉFONO O CELULAR DE EMERGENCIA:</label><input class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Ej: 320 4477463" required="" type="tel"></div></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div><label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">TIPO DE PROBLEMA LEGAL:</label><select class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner"><option>Accidente de Tránsito / Estrellada</option><option>Resbalón y Caída (Quiero Demandar)</option><option>Detención Policial / Allanamiento</option><option>Fianza Urgente para un Familiar</option><option>Cheque Rebotado o Fraude Injusto</option><option>Otro lamento legal inconfesable</option></select></div><div><label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">UBICACIÓN DEL INCIDENTE:</label><input class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Ej: Carrera 7 con 72 / CAI de Policía" type="text"></div></div><div><label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">DETALLES RÁPIDOS DE TU SITUACIÓN (SÉ SINCERO, TENEMOS SECRETO PROFESIONAL):</label><textarea class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Cuenta brevemente qué pasó. Recuerda: hasta que Pulido llegue, no aceptes cargos..." rows="3"></textarea></div><div class="flex items-center gap-2 p-2 bg-parchment-base border border-ink-black"><input class="border-2 border-ink-black text-primary focus:ring-0 rounded-none" id="nda" required="" type="checkbox"><label class="font-label-sm text-label-sm uppercase text-ink-black font-bold" for="nda">Entiendo que Pulido no juzga mis decisiones y que defenderá mi pellejo con todas las leyes posibles.</label></div><button class="w-full bg-primary-container hover:bg-primary text-stamped-white font-label-lg text-label-lg uppercase py-4 border-4 border-ink-black shadow-[6px_6px_0px_#11161B] hover:translate-x-0.5 hover:translate-y-0.5 active:translate-x-1 active:translate-y-1 transition-all text-center flex items-center justify-center gap-2 font-bold" type="submit"><span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">send</span><span class="">¡ENVIAR A PULIDO ANTES DE QUE SEA TARDE!</span></button></form><div class="hidden mt-4 p-4 bg-legal-gold border-3 border-ink-black font-label-md text-label-md uppercase font-bold text-ink-black text-center" id="form-alert">¡EXPEDIENTE TRANSMITIDO AL BEPER DE PULIDO! NO HABLES CON NADIE, ÉL YA ESTÁ EN CAMINO.</div></div><div class="lg:col-span-4 flex flex-col items-center"><div class="bg-parchment-dark border-4 border-ink-black p-3 retro-shadow-box w-full"><div class="bg-alert-red-dark text-stamped-white py-1 px-2 font-label-sm text-label-sm uppercase font-bold border border-ink-black text-center mb-2 tracking-wider">POSTER DE JUSTICIA INMEDIATA</div><div class="border-3 border-ink-black overflow-hidden bg-legal-gold"><img alt="Better Call Pulido Asesoría Legal Banner Vertical" class="w-full h-auto object-contain block max-w-full hover:scale-[1.02] transition-transform" src="assets/poster-vertical-justicia.png"></div><div class="mt-3 text-center"><a href="tel:3204477463" class="block w-full bg-primary hover:bg-alert-red-dark text-stamped-white font-label-md text-label-md uppercase py-2.5 border-2 border-ink-black retro-shadow-sm font-bold">LLAMAR DIRECTO: 320 4477463</a></div></div></div></div></section>
-<!-- ================= 7. FOOTER (SHARED COMPONENT) ================= -->
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="los-senores-p"><div class="bg-parchment-dark border-4 border-ink-black p-4 sm:p-8 retro-shadow-box relative"><div class="bg-primary text-stamped-white p-3 border-2 border-ink-black flex flex-col md:flex-row justify-between items-center gap-2 mb-6"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-legal-gold text-3xl" style="font-variation-settings: 'FILL' 1;">handshake</span><span class="font-headline-md text-headline-md uppercase text-legal-gold tracking-wide">★ ¿O MEJOR LLAMA A... LOS SEÑORES P? ★</span></div><span class="bg-legal-gold text-ink-black font-label-md text-label-md uppercase px-3 py-1 border border-ink-black font-bold rotate-1">DOBLE DEFENSA, CERO CULPA</span></div><div class="text-center max-w-3xl mx-auto mb-6"><h2 class="font-headline-xl text-headline-xl text-ink-black uppercase leading-tight">LA PAREJA DE ABOGADOS MÁS TEMIDA EN LOS TRIBUNALES</h2><p class="font-body-lg text-body-lg text-ink-black mt-2 font-medium">¿Un caso demasiado complicado para un solo abogado? Pulido y su socia legal unen fuerzas para aplastar a la fiscalía. Dos mentes maestras, doble estrategia, fianza express garantizada.</p></div><div class="border-4 border-ink-black bg-legal-gold shadow-[6px_6px_0px_#11161B] overflow-hidden relative group"><img alt="¡Mejor Llama a Los Señores P! - Abogados Asociados" class="w-full h-auto object-contain block max-w-full hover:scale-[1.01] transition-transform duration-300" src="assets/senores-p-poster.png"></div><div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-stamped-white border-2 border-ink-black p-4 retro-shadow-sm"><div class="flex items-center gap-2 text-ink-black"><span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span><span class="font-label-md text-label-md uppercase font-bold">EQUIPO DUO PENAL &amp; CIVIL • ATENCIÓN 24 HORAS</span></div><div class="flex flex-wrap gap-3 w-full sm:w-auto"><a class="flex-1 sm:flex-initial text-center bg-primary hover:bg-alert-red-dark text-stamped-white font-label-md text-label-md uppercase px-5 py-3 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform flex items-center justify-center gap-2" href="tel:3204477463"><span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">call</span><span class="">¡CONTRATAR A LA PAREJA LEGAL YA! : 320 4477463</span></a><a class="flex-1 sm:flex-initial text-center bg-emerald-600 hover:bg-emerald-500 text-stamped-white font-label-md text-label-md uppercase px-5 py-3 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform flex items-center justify-center gap-2" href="https://wa.me/573204477463?text=Hola%20Señores%20P,%20necesito%20la%20doble%20defensa%20legal%20para%20un%20caso%20urgente" target="_blank"><span class="material-symbols-outlined text-xl">chat</span><span class="">CONSULTA CONJUNTA POR WHATSAPP</span></a></div></div></div></section><footer class="bg-ink-black dark:bg-ink-black w-full border-t-4 border-primary dark:border-primary shadow-[0px_-4px_0px_#11161B]">
+<!-- ================= 6. VALLA NACIONAL ================= -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12" id="valla-nacional">
+  <div class="bg-parchment-dark border-4 border-ink-black p-4 sm:p-8 retro-shadow-box relative">
+    <div class="bg-primary text-stamped-white p-3 border-2 border-ink-black flex flex-col md:flex-row justify-between items-center gap-2 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-legal-gold text-2xl" style="font-variation-settings: 'FILL' 1;">billboard</span>
+        <span class="font-headline-md text-headline-md uppercase text-legal-gold tracking-wide">★ VALLA PÚBLICA NACIONAL: ¡CONOCE TUS DERECHOS EN LA CALLE! ★</span>
+      </div>
+      <span class="bg-ink-black text-stamped-white font-label-sm text-label-sm uppercase px-3 py-1 border border-stamped-white font-bold rotate-1">VISTA EN CARRETERAS</span>
+    </div>
+    
+    <div class="text-center max-w-3xl mx-auto mb-6">
+      <p class="font-headline-sm text-headline-sm uppercase text-ink-black tracking-wide">¿VISTE NUESTRO CARTEL EN LA AUTOPISTA? NO DIGAS NADA SIN TU ABOGADO</p>
+      <p class="font-body-md text-body-md text-ink-black/90 mt-1">Si te detuvieron o viste esta valla mientras la patrulla te seguía, grábate este número en la memoria antes de firmar cualquier papel.</p>
+    </div>
+
+    <div class="max-w-5xl mx-auto border-4 border-ink-black bg-legal-gold shadow-[6px_6px_0px_#11161B] overflow-hidden relative group aspect-[16/9]">
+      <img alt="Valla Publicitaria Oficial Better Call Pulido" class="w-full h-full object-cover block hover:scale-[1.01] transition-transform duration-300" src="assets/valla-autopista.png">
+    </div>
+
+    <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-stamped-white border-2 border-ink-black p-4 retro-shadow-sm">
+      <div class="flex items-center gap-2 text-ink-black">
+        <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">campaign</span>
+        <span class="font-label-md text-label-md uppercase font-bold">CARTEL AUTORIZADO DEFENSA VIAL Y PENAL 24/7</span>
+      </div>
+      <div class="flex flex-wrap gap-3 w-full sm:w-auto">
+        <a class="flex-1 sm:flex-initial text-center bg-legal-gold hover:bg-secondary-fixed text-ink-black font-label-md text-label-md uppercase px-4 py-2 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform" href="assets/valla-autopista.png" target="_blank" download="valla-publicitaria-pulido.png">DESCARGAR AFICHE EN ALTA DEFINICIÓN</a>
+        <a class="flex-1 sm:flex-initial text-center bg-primary hover:bg-alert-red-dark text-stamped-white font-label-md text-label-md uppercase px-4 py-2 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform" href="tel:3204477463">REPORTAR ABUSO POLICIAL AHORA: 320 4477463</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. FORMULARIO DE ADMISIÓN URGENTE (TELEGRAMA / EXPEDIENTE) ================= -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12" id="contacto-emergencia">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+    <div class="lg:col-span-8 bg-stamped-white border-4 border-ink-black retro-shadow-box p-6 sm:p-10 relative" id="expediente-urgente">
+      <div class="bg-primary text-stamped-white p-3 border-2 border-ink-black mb-6 flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-2 font-headline-md text-headline-md uppercase text-legal-gold">
+          <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">assignment_late</span>
+          <span>EXPEDIENTE DE INGRESO JUDICIAL CONFIDENCIAL</span>
+        </div>
+        <span class="font-label-sm text-label-sm uppercase bg-ink-black text-stamped-white px-2 py-0.5 border border-stamped-white font-bold">URGENCIA NIVEL 5</span>
+      </div>
+
+      <p class="font-body-md text-body-md text-ink-black mb-6">Llena este formulario antes de que llegue la notificación fiscal o la grúa municipal. Pulido revisa personalmente cada envío en su beeper / teléfono directo.</p>
+
+      <form class="space-y-4" id="emergency-form" onsubmit="handleFormSubmit(event)">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">NOMBRE DEL IMPLICADO / CLIENTE:</label>
+            <input class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Ej: Wilson 'El Rápido' Gómez" required="" type="text">
+          </div>
+          <div>
+            <label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">TELÉFONO O CELULAR DE EMERGENCIA:</label>
+            <input class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Ej: 320 4477463" required="" type="tel">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">TIPO DE PROBLEMA LEGAL:</label>
+            <select class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner">
+              <option>Accidente de Tránsito / Estrellada</option>
+              <option>Resbalón y Caída (Quiero Demandar)</option>
+              <option>Detención Policial / Allanamiento</option>
+              <option>Fianza Urgente para un Familiar</option>
+              <option>Cheque Rebotado o Fraude Injusto</option>
+              <option>Otro lamento legal inconfesable</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">UBICACIÓN DEL INCIDENTE:</label>
+            <input class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Ej: Carrera 7 con 72 / CAI de Policía" type="text">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-label-md text-label-md uppercase text-ink-black mb-1 font-bold">DETALLES RÁPIDOS DE TU SITUACIÓN (SÉ SINCERO, TENEMOS SECRETO PROFESIONAL):</label>
+          <textarea class="w-full bg-parchment-base border-3 border-ink-black px-4 py-2.5 font-body-md text-body-md text-ink-black focus:bg-stamped-white focus:border-primary focus:ring-0 rounded-none shadow-inner" placeholder="Cuenta brevemente qué pasó. Recuerda: hasta que Pulido llegue, no aceptes cargos..." rows="3"></textarea>
+        </div>
+
+        <div class="flex items-center gap-2 p-2 bg-parchment-base border border-ink-black">
+          <input class="border-2 border-ink-black text-primary focus:ring-0 rounded-none" id="nda" required="" type="checkbox">
+          <label class="font-label-sm text-label-sm uppercase text-ink-black font-bold" for="nda">Entiendo que Pulido no juzga mis decisiones y que defenderá mi pellejo con todas las leyes posibles.</label>
+        </div>
+
+        <button class="w-full bg-primary-container hover:bg-primary text-stamped-white font-label-lg text-label-lg uppercase py-4 border-4 border-ink-black shadow-[6px_6px_0px_#11161B] hover:translate-x-0.5 hover:translate-y-0.5 active:translate-x-1 active:translate-y-1 transition-all text-center flex items-center justify-center gap-2 font-bold" type="submit">
+          <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">send</span>
+          <span>¡ENVIAR A PULIDO ANTES DE QUE SEA TARDE!</span>
+        </button>
+      </form>
+
+      <div class="hidden mt-4 p-4 bg-legal-gold border-3 border-ink-black font-label-md text-label-md uppercase font-bold text-ink-black text-center" id="form-alert">
+        ¡EXPEDIENTE TRANSMITIDO AL BEPER DE PULIDO! NO HABLES CON NADIE, ÉL YA ESTÁ EN CAMINO.
+      </div>
+    </div>
+
+    <div class="lg:col-span-4 flex flex-col items-center">
+      <div class="bg-parchment-dark border-4 border-ink-black p-3 retro-shadow-box w-full">
+        <div class="bg-alert-red-dark text-stamped-white py-1 px-2 font-label-sm text-label-sm uppercase font-bold border border-ink-black text-center mb-2 tracking-wider">
+          POSTER DE JUSTICIA INMEDIATA
+        </div>
+        <div class="border-3 border-ink-black overflow-hidden bg-legal-gold">
+          <img alt="Better Call Pulido Asesoría Legal Banner Vertical" class="w-full h-auto object-contain block max-w-full hover:scale-[1.02] transition-transform" src="assets/poster-vertical-justicia.png">
+        </div>
+        <div class="mt-3 text-center">
+          <a href="tel:3204477463" class="block w-full bg-primary hover:bg-alert-red-dark text-stamped-white font-label-md text-label-md uppercase py-2.5 border-2 border-ink-black retro-shadow-sm font-bold">
+            LLAMAR DIRECTO: 320 4477463
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. ¿O MEJOR LLAMA A... LOS SEÑORES P? ================= -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-12" id="los-senores-p">
+  <div class="bg-parchment-dark border-4 border-ink-black p-4 sm:p-8 retro-shadow-box relative">
+    <div class="bg-primary text-stamped-white p-3 border-2 border-ink-black flex flex-col md:flex-row justify-between items-center gap-2 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-legal-gold text-3xl" style="font-variation-settings: 'FILL' 1;">handshake</span>
+        <span class="font-headline-md text-headline-md uppercase text-legal-gold tracking-wide">★ ¿O MEJOR LLAMA A... LOS SEÑORES P? ★</span>
+      </div>
+      <span class="bg-legal-gold text-ink-black font-label-md text-label-md uppercase px-3 py-1 border border-ink-black font-bold rotate-1">DOBLE DEFENSA, CERO CULPA</span>
+    </div>
+
+    <div class="text-center max-w-3xl mx-auto mb-6">
+      <h2 class="font-headline-xl text-headline-xl text-ink-black uppercase leading-tight">LA PAREJA DE ABOGADOS MÁS TEMIDA EN LOS TRIBUNALES</h2>
+      <p class="font-body-lg text-body-lg text-ink-black mt-2 font-medium">¿Un caso demasiado complicado para un solo abogado? Pulido y su socia legal unen fuerzas para aplastar a la fiscalía. Dos mentes maestras, doble estrategia, fianza express garantizada.</p>
+    </div>
+
+    <!-- 16:9 Banner Format -->
+    <div class="max-w-5xl mx-auto border-4 border-ink-black bg-legal-gold shadow-[6px_6px_0px_#11161B] overflow-hidden relative group aspect-[16/9]">
+      <img alt="¡Mejor Llama a Los Señores P! - Abogados Asociados" class="w-full h-full object-cover block hover:scale-[1.01] transition-transform duration-300" src="assets/senores-p-16x9.png">
+    </div>
+
+    <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-stamped-white border-2 border-ink-black p-4 retro-shadow-sm">
+      <div class="flex items-center gap-2 text-ink-black">
+        <span class="material-symbols-outlined text-primary text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+        <span class="font-label-md text-label-md uppercase font-bold">EQUIPO DUO PENAL &amp; CIVIL • ATENCIÓN 24 HORAS</span>
+      </div>
+      <div class="flex flex-wrap gap-3 w-full sm:w-auto">
+        <a class="flex-1 sm:flex-initial text-center bg-primary hover:bg-alert-red-dark text-stamped-white font-label-md text-label-md uppercase px-5 py-3 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform flex items-center justify-center gap-2" href="tel:3204477463">
+          <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">call</span>
+          <span>¡CONTRATAR A LA PAREJA LEGAL YA! : 320 4477463</span>
+        </a>
+        <a class="flex-1 sm:flex-initial text-center bg-emerald-600 hover:bg-emerald-500 text-stamped-white font-label-md text-label-md uppercase px-5 py-3 border-2 border-ink-black font-bold active:translate-x-0.5 active:translate-y-0.5 transition-transform flex items-center justify-center gap-2" href="https://wa.me/573204477463?text=Hola%20Señores%20P,%20necesito%20la%20doble%20defensa%20legal%20para%20un%20caso%20urgente" target="_blank">
+          <span class="material-symbols-outlined text-xl">chat</span>
+          <span>CONSULTA CONJUNTA POR WHATSAPP</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-ink-black dark:bg-ink-black w-full border-t-4 border-primary dark:border-primary shadow-[0px_-4px_0px_#11161B]">
 <div class="w-full px-margin-desktop py-space-lg flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-gutter">
 <!-- Brand & Retro Hit Counter -->
 <div class="flex flex-col items-center md:items-start gap-2">
